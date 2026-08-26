@@ -341,6 +341,67 @@ function App() {
           </div>
         </section>
 
+        {/* PROGRAMS */}
+        <section
+          id="programs"
+          className="bg-cream px-5 py-20 sm:px-6 sm:py-24 md:px-8 md:py-28 lg:px-10 lg:py-32 xl:px-12 2xl:px-16"
+        >
+          <div className="mx-auto max-w-[1400px]">
+            {/* PROGRAMS INTRO */}
+            <div className="grid gap-10 lg:grid-cols-[1fr_0.85fr] lg:gap-0">
+              <div className="pr-0 lg:pr-16">
+                <div className="mb-10 flex items-center gap-3">
+                  <span className="font-body text-[0.7rem] font-extrabold uppercase tracking-[0.18em] text-forest">
+                    Our Programs
+                  </span>
+
+                  <span className="h-px w-24 bg-gold"></span>
+
+                  <span className="h-1.5 w-1.5 rounded-full bg-gold"></span>
+                </div>
+
+                <h2 className="max-w-[760px] font-display text-[3rem] font-normal uppercase leading-[0.9] tracking-[-0.045em] text-ink sm:text-[3.6rem] md:text-[4.5rem] lg:text-[5rem] xl:text-[5.7rem] 2xl:text-[6.1rem]">
+                  Creating pathways for young people to thrive.
+                </h2>
+              </div>
+
+              <div className="relative flex items-center border-gold lg:border-l lg:pl-10 xl:pl-14 2xl:pl-16">
+                <p className="max-w-[620px] font-body text-base font-medium leading-7 text-ink/70 md:text-lg md:leading-8">
+                  Our programs are designed to create meaningful educational
+                  opportunities, strengthen learning, and help young people
+                  develop the knowledge and skills they need for the future.
+                </p>
+              </div>
+            </div>
+
+            {/* PROGRAM CARDS */}
+            <div className="mt-16 grid border-t border-ink/10 sm:grid-cols-2 lg:mt-20 lg:grid-cols-3">
+              {programs.map((program, index) => (
+                <article
+                  key={program.title}
+                  className="group border-b border-ink/10 px-0 py-8 sm:px-6 sm:py-10 lg:border-r lg:px-8 lg:py-12 lg:nth-[3n]:border-r-0"
+                >
+                  <div className="flex items-start justify-between">
+                    <span className="font-display text-4xl font-normal leading-none tracking-[-0.04em] text-gold">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+
+                    <span className="mt-3 h-px w-8 bg-ink/15 transition-all duration-500 group-hover:w-14 group-hover:bg-gold"></span>
+                  </div>
+
+                  <h3 className="mt-8 max-w-md font-body text-base font-extrabold uppercase leading-[1.3] tracking-[0.06em] text-forest sm:text-lg">
+                    {program.title}
+                  </h3>
+
+                  <p className="mt-4 max-w-md font-body text-sm font-medium leading-7 text-ink/60 sm:text-base">
+                    {program.text}
+                  </p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section
           id="stories"
           className="bg-cream px-5 py-16 sm:px-6 sm:py-20 md:px-8 md:py-24 lg:px-10 lg:py-28 xl:px-12 2xl:px-16"
