@@ -616,7 +616,7 @@ function App() {
           </div>
           <a
             className="inline-flex items-center justify-center rounded-full border border-gold px-6 py-3 text-xs font-extrabold uppercase tracking-[0.16em] text-gold transition-all duration-300 hover:bg-gold hover:text-ink"
-            href="/documents/oef-impact-magazine.pdf"
+            href="https://qnzdfp345asd8nrn.public.blob.vercel-storage.com/oef-impact-magazine.pdf"
             target="_blank"
             rel="noreferrer"
           >
