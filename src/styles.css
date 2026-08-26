@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Manrope:wght@400;500;600;700;800&display=swap");
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    font-family: theme("fontFamily.body");
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+@layer components {
+  .section {
+    @apply px-5 py-16 lg:px-8 lg:py-24;
+  }
+
+  .section > * {
+    @apply mx-auto max-w-7xl;
+  }
+
+  .section-heading {
+    @apply mb-10 grid gap-6 lg:grid-cols-[0.8fr_0.5fr] lg:items-end;
+  }
+
+  .section-heading h2 {
+    @apply font-display text-5xl leading-none md:text-6xl;
+  }
+
+  .section-heading p {
+    @apply text-lg leading-8 text-ink/65;
+  }
+
+  .eyebrow {
+    @apply mb-5 inline-flex items-center gap-3 text-xs font-black uppercase tracking-wider text-brick;
+  }
+
+  .eyebrow::before {
+    content: "";
+    @apply h-[3px] w-9 bg-gold;
+  }
+
+  .button {
+    @apply inline-flex min-h-12 items-center justify-center rounded-full border border-ink px-5 text-sm font-black transition hover:-translate-y-0.5 hover:shadow-lg;
+  }
+
+  .button-dark {
+    @apply bg-ink text-paper;
+  }
+
+  .timeline-card {
+    @apply grid gap-4 border-t border-paper/20 py-6 md:grid-cols-[96px_1fr];
+  }
+
+  .timeline-card strong {
+    @apply font-display text-3xl text-gold;
+  }
+
+  .timeline-card h3 {
+    @apply font-display text-3xl leading-tight;
+  }
+
+  .timeline-card p {
+    @apply mt-3 leading-7 text-paper/70;
+  }
+}
