@@ -230,21 +230,40 @@ function App() {
 
         <section
           aria-label="Impact highlights"
-          className="grid border-y border-ink/10 bg-ink text-paper sm:grid-cols-2 lg:grid-cols-4"
+          className="relative overflow-hidden bg-cream px-5 py-16 sm:px-6 md:px-8 lg:px-10 lg:py-24 xl:px-12 2xl:px-16"
         >
-          {impactStats.map((item) => (
-            <article
-              key={item.value}
-              className="border-b border-paper/10 p-7 md:border-b-0 md:border-r md:p-8"
-            >
-              <strong className="block font-display text-6xl leading-none tracking-[-0.04em] text-gold md:text-7xl">
-                {item.value}
-              </strong>
-              <span className="mt-4 block max-w-xs text-xs font-medium uppercase leading-6 tracking-[0.08em] text-paper/60">
-                {item.label}
-              </span>
-            </article>
-          ))}
+          <div className="mx-auto grid max-w-[1400px] gap-5 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
+            {impactStats.map((item, index) => (
+              <article
+                key={item.value}
+                className={`group relative flex min-h-[250px] flex-col justify-between overflow-hidden rounded-[2rem] border border-paper/60 bg-ink/55 p-7 shadow-[0_24px_80px_rgba(16,20,24,0.12)] backdrop-blur-2xl transition-all duration-500 hover:-translate-y-2 hover:bg-paper/80 hover:shadow-[0_32px_90px_rgba(16,20,24,0.18)] sm:aspect-square md:p-8 ${
+                  index === 0
+                    ? "lg:-translate-y-6"
+                    : index === 1
+                      ? "lg:translate-y-6"
+                      : index === 2
+                        ? "lg:-translate-y-3"
+                        : "lg:translate-y-3"
+                }`}
+              >
+                <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,250,240,0.82),rgba(246,240,229,0.35))]"></div>
+
+                <div className="absolute -right-10 -top-10 h-28 w-28 rounded-full border border-gold/30"></div>
+
+                <div className="relative">
+                  <span className="mb-8 block h-px w-14 bg-gold transition-all duration-500 group-hover:w-24"></span>
+
+                  <strong className="block font-display text-[4.8rem] font-normal leading-none tracking-[-0.06em] text-ink sm:text-[5.4rem] lg:text-[5.8rem] xl:text-[6.4rem]">
+                    {item.value}
+                  </strong>
+                </div>
+
+                <p className="relative mt-8 max-w-[18rem] text-[0.72rem] font-extrabold uppercase leading-6 tracking-[0.12em] text-ink/60 sm:text-[0.75rem]">
+                  {item.label}
+                </p>
+              </article>
+            ))}
+          </div>
         </section>
 
         <section
