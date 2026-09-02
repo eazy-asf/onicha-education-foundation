@@ -31,15 +31,18 @@ function Navbar() {
           className="group flex items-center gap-3 font-black tracking-tight"
           onClick={closeMenu}
         >
-          <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-ink font-display text-xs tracking-[0.08em] text-gold transition-transform duration-300 group-hover:rotate-3 sm:h-11 sm:w-11 sm:text-sm">
-            OEF
+          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-ink/12 bg-paper p-2 shadow-[0_2px_10px_rgba(16,20,24,0.08)] transition-transform duration-300 group-hover:rotate-3 sm:h-12 sm:w-12">
+            <img
+              src="/magazine-pages/Frame%2047%20(1).svg"
+              alt="Onicha Education Foundation logo"
+              className="h-full w-full object-contain"
+            />
           </span>
 
           <span className="hidden text-sm tracking-tight sm:inline">
             Onicha Education Foundation
           </span>
         </Link>
-
         {/* DESKTOP NAVIGATION */}
         <nav className="hidden items-center gap-6 text-[0.68rem] font-extrabold uppercase tracking-[0.16em] text-ink/60 md:flex lg:gap-8">
           {navItems.map((item) => (
