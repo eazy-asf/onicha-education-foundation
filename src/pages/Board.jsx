@@ -4,7 +4,7 @@ const boardMembers = [
   {
     name: "Dr. Chukwuma Ogbonna",
     role: "Chairman, Board of Trustees",
-    image: "",
+    image: "/magazine-pages/chukwuma-ogbonna.jpeg",
     functions: [
       "General oversight of OEF operations",
       "Provide general leadership",
@@ -15,7 +15,7 @@ const boardMembers = [
   {
     name: "Engr. Humphrey Okereke",
     role: "President",
-    image: "",
+    image: "/magazine-pages/engr-humphrey.jpeg",
     functions: [
       "General oversight and daily operations",
       "Delegates duties as appropriate",
@@ -26,7 +26,7 @@ const boardMembers = [
   {
     name: "Dr. Nathaniel Obasi",
     role: "Lead, Research Developments",
-    image: "",
+    image: "/magazine-pages/dr-nathaniel.jpeg",
     functions: [
       "Design approved researches",
       "Coordinate OEF grants",
@@ -37,7 +37,7 @@ const boardMembers = [
   {
     name: "Engr. Benison Ovoke",
     role: "Lead, Career, Scholarships, and Overseas Opportunities",
-    image: "",
+    image: "/magazine-pages/Engr. Benison.jpeg",
     functions: [
       "Search for, collate, and share overseas and career growth opportunities",
       "Develop feedback and evaluation criteria for all awardees of OEF scholarships",
@@ -48,7 +48,7 @@ const boardMembers = [
   {
     name: "Dr. Kenneth Omabe",
     role: "Lead, Finance and Accounting",
-    image: "",
+    image: "/magazine-pages/kenneth-omabe.jpeg",
     functions: [
       "Develop standard and acceptable financial report templates",
       "Keep detailed and accurate records of all OEF financial dealings",
@@ -59,7 +59,7 @@ const boardMembers = [
   {
     name: "Dr. Ejike Chukwu",
     role: "Lead, ICT and Innovation",
-    image: "",
+    image: "/magazine-pages/ejike-chukwu.jpeg",
     functions: [
       "Develop and manage OEF Website",
       "Manage Microsoft Suites and associated packages",
@@ -71,7 +71,7 @@ const boardMembers = [
   {
     name: "Engr. Ikechukwu Onwe",
     role: "Lead, Community Relations",
-    image: "",
+    image: "/magazine-pages/ikechukwu-onwe.jpeg",
     functions: [
       "Coordinate physical activities of our annual VCIs",
       "Gather feedback from VCI participants and the general community for OEF continuous improvement",
@@ -92,7 +92,7 @@ const boardMembers = [
   {
     name: "Barr. Chukwuma Nwosu",
     role: "Secretary and Lead, Legal Services",
-    image: "",
+    image: "/magazine-pages/chukwuma-nwosu.jpeg",
     functions: [
       "Represent OEF in all legal-related matters",
       "Take and maintain minutes of all BOT meetings",
@@ -103,7 +103,7 @@ const boardMembers = [
   {
     name: "Mr. Edward Okereke",
     role: "OEF Secretary and Community Interface",
-    image: "",
+    image: "/magazine-pages/okereke-edward.jpeg",
     functions: [
       "Assist Engr. Onwe to coordinate OEF VCI annually",
       "Take charge of printings, dispatch, and feedback for all OEF correspondences at home",
@@ -115,7 +115,7 @@ const boardMembers = [
   {
     name: "Dr. Mathew Akpa",
     role: "Lead, Strategic Communications",
-    image: "",
+    image: "/magazine-pages/mathew.jpeg",
     functions: [
       "Draft all OEF public announcements",
       "Publish approved OEF announcements on appropriate platforms",
@@ -126,7 +126,7 @@ const boardMembers = [
   {
     name: "Dr. David Okorafor",
     role: "Lead, Organizational Development and Strategy",
-    image: "",
+    image: "/magazine-pages/david-okorafor.jpeg",
     functions: [
       "Lead development of any new OEF policy",
       "Review and update contents of our strategic document",
@@ -155,34 +155,33 @@ function Board() {
   }
 
   return (
-    <main className="bg-cream text-ink">
+    <main className="overflow-x-hidden bg-cream text-ink">
       {/* =====================================================
           BOARD HERO
       ====================================================== */}
-      <section className="px-5 pb-16 pt-20 sm:px-6 sm:pb-20 sm:pt-24 md:px-8 md:pb-24 md:pt-28 lg:px-10 lg:pb-28 lg:pt-32 xl:px-12 2xl:px-16">
-        <div className="mx-auto max-w-[1400px]">
+      <section className="bg-primary-light px-5 pb-0 pt-30 sm:px-6 sm:pb-0 sm:pt-28 md:px-8 md:pb-24 md:pt-28 lg:px-10 lg:pb-28 lg:pt-32 xl:px-12 2xl:px-16">
+        <div className="mx-auto max-w-[1400px] lg:border-b pb-15 border-primary/25">
           <div className="mb-10 flex items-center gap-3">
-            <span className="font-body text-[0.7rem] font-extrabold uppercase tracking-[0.18em] text-forest">
+            <span className="font-body text-[0.7rem] font-extrabold uppercase tracking-[0.18em] text-primary">
               Governance
             </span>
 
-            <span className="h-px w-24 bg-gold"></span>
+            <span className="h-px w-24 bg-primary"></span>
 
-            <span className="h-1.5 w-1.5 rounded-full bg-gold"></span>
+            <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
           </div>
 
-          <div className="grid gap-10 lg:grid-cols-[1.15fr_0.7fr] lg:gap-20">
+          <div className="m-auto text-center">
             <div>
-              <h1 className="max-w-[900px] font-display text-[3.4rem] font-normal uppercase leading-[0.88] tracking-[-0.045em] text-ink sm:text-[4.3rem] md:text-[5.3rem] lg:text-[6rem] xl:text-[6.5rem]">
+              <h1 className=" font-display text-[3.4rem] font-normal uppercase leading-[0.88] tracking-[-0.045em] text-primary-dark sm:text-[4.3rem] md:text-[5.3rem] lg:text-[6rem] xl:text-[6.5rem]">
                 Board of Trustees
               </h1>
             </div>
 
-            <div className="flex items-end">
-              <p className="max-w-xl border-l border-gold pl-6 font-body text-base font-medium leading-7 text-ink/65 md:text-lg md:leading-8">
-                The people entrusted with providing leadership, oversight,
-                strategic direction, and specialised support across the Onicha
-                Education Foundation.
+            <div max-w-3xl>
+              <p className="mt-7 font-body  text-base font-medium leading-7 text-ink/65 md:text-lg md:leading-8">
+                A foundation is only as strong as the people responsible for
+                carrying its vision forward.
               </p>
             </div>
           </div>
@@ -190,55 +189,29 @@ function Board() {
       </section>
 
       {/* =====================================================
-          BOARD INTRO
-      ====================================================== */}
-      <section className="border-y border-ink/10 bg-paper px-5 py-16 sm:px-6 sm:py-20 md:px-8 md:py-24 lg:px-10 lg:py-28 xl:px-12 2xl:px-16">
-        <div className="mx-auto grid max-w-[1400px] gap-10 lg:grid-cols-[0.8fr_1fr] lg:gap-20">
-          <div>
-            <p className="font-body text-[0.7rem] font-extrabold uppercase tracking-[0.18em] text-forest">
-              Leadership & Responsibility
-            </p>
-          </div>
-
-          <div>
-            <p className="max-w-3xl font-display text-3xl leading-[1.05] tracking-[-0.025em] text-ink sm:text-4xl md:text-5xl">
-              A foundation is only as strong as the people responsible for
-              carrying its vision forward.
-            </p>
-
-            <p className="mt-7 max-w-2xl font-body text-base font-medium leading-7 text-ink/65 md:text-lg md:leading-8">
-              OEF's Board of Trustees brings together individuals responsible
-              for different areas of leadership, development, governance,
-              education, community relations, and organisational growth.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* =====================================================
           BOARD MEMBERS
       ====================================================== */}
-      <section className="bg-cream px-5 py-20 sm:px-6 sm:py-24 md:px-8 md:py-28 lg:px-10 lg:py-32 xl:px-12 2xl:px-16">
+      <section className="bg-primary-light px-5 pb-16 pt-16 sm:px-6 sm:py-10 md:px-8 md:py-24 lg:px-10 lg:pt-0 xl:px-12 2xl:px-16">
         <div className="mx-auto max-w-[1400px]">
           {/* SECTION HEADING */}
-          <div className="mb-14 grid gap-8 lg:grid-cols-[1fr_0.7fr] lg:items-end lg:gap-16">
+          <div className="mb-14 grid min-w-0 gap-8 lg:grid-cols-[1fr_0.7fr] lg:items-end lg:gap-16">
             <div>
               <div className="mb-8 flex items-center gap-3">
-                <span className="font-body text-[0.7rem] font-extrabold uppercase tracking-[0.18em] text-forest">
+                <span className="font-body text-[0.7rem] font-extrabold uppercase tracking-[0.18em] text-primary">
                   The Board
                 </span>
 
-                <span className="h-px w-24 bg-gold"></span>
+                <span className="h-px w-24 bg-primary"></span>
 
-                <span className="h-1.5 w-1.5 rounded-full bg-gold"></span>
+                <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
               </div>
 
-              <h2 className="max-w-4xl font-display text-[3rem] font-normal uppercase leading-[0.9] tracking-[-0.045em] text-ink sm:text-[3.8rem] md:text-[4.8rem] lg:text-[5.5rem] xl:text-[6rem]">
+              <h2 className="max-w-4xl font-display text-[2.7rem] font-normal uppercase leading-[0.9] tracking-[-0.045em] text-ink sm:text-[3.8rem] md:text-[4.8rem] lg:text-[5.5rem] xl:text-[6rem]">
                 People behind the responsibility.
               </h2>
             </div>
 
-            <p className="max-w-xl border-l border-gold pl-6 font-body text-base font-medium leading-7 text-ink/65 md:text-lg md:leading-8">
+            <p className="max-w-xl border-l border-primary pl-6 font-body text-base font-medium leading-7 text-ink/65 md:text-lg md:leading-8">
               Select a member to explore their role and responsibilities within
               OEF.
             </p>
@@ -278,7 +251,7 @@ function Board() {
                             OEF
                           </span>
 
-                          <span className="mt-4 text-[0.62rem] font-extrabold uppercase tracking-[0.18em] text-paper/45">
+                          <span className="mt-4 text-[0.62rem] font-extrabold uppercase tracking-[0.18em] text-muted-gold">
                             Photo coming soon
                           </span>
                         </div>
@@ -294,11 +267,11 @@ function Board() {
                     <div className="p-6 sm:p-7">
                       <div className="flex items-start justify-between gap-5">
                         <div>
-                          <h3 className="font-display text-2xl leading-[1] tracking-[-0.025em] text-ink sm:text-3xl">
+                          <h3 className="font-display text-2xl leading-[1] tracking-[-0.025em] text-primary-dark sm:text-3xl">
                             {member.name}
                           </h3>
 
-                          <p className="mt-3 max-w-[280px] font-body text-[0.68rem] font-extrabold uppercase leading-[1.5] tracking-[0.08em] text-forest">
+                          <p className="mt-3 max-w-[280px] font-body text-[0.68rem] font-extrabold uppercase leading-[1.5] tracking-[0.08em] text-primary">
                             {member.role}
                           </p>
                         </div>
@@ -359,18 +332,31 @@ function Board() {
       {/* =====================================================
           CLOSING SECTION
       ====================================================== */}
-      <section className="bg-ink px-5 py-20 text-paper sm:px-6 sm:py-24 md:px-8 md:py-28 lg:px-10 lg:py-32 xl:px-12 2xl:px-16">
-        <div className="mx-auto grid max-w-[1400px] gap-10 lg:grid-cols-[1fr_0.7fr] lg:items-end lg:gap-20">
-          <h2 className="max-w-4xl font-display text-[3rem] font-normal uppercase leading-[0.9] tracking-[-0.045em] sm:text-[4rem] md:text-[5rem] lg:text-[5.8rem]">
-            Leadership with purpose.
-          </h2>
+      {/* =====================================================
+          BOARD INTRO
+      ====================================================== */}
+      {/* <section className="border-y border-ink/10 bg-paper px-5 py-16 sm:px-6 sm:py-20 md:px-8 md:py-24 lg:px-10 lg:py-28 xl:px-12 2xl:px-16">
+        <div className="mx-auto grid max-w-[1400px] gap-10 lg:grid-cols-[0.8fr_1fr] lg:gap-20">
+          <div>
+            <p className="font-body text-[0.7rem] font-extrabold uppercase tracking-[0.18em] text-forest">
+              Leadership & Responsibility
+            </p>
+          </div>
 
-          <p className="max-w-xl border-l border-gold pl-6 font-body text-base font-medium leading-7 text-paper/60 md:text-lg md:leading-8">
-            Together, the Board provides the leadership and specialised
-            responsibilities required to move OEF's educational vision forward.
-          </p>
+          <div>
+            <p className="max-w-3xl font-display text-3xl leading-[1.05] tracking-[-0.025em] text-ink sm:text-4xl md:text-5xl">
+              A foundation is only as strong as the people responsible for
+              carrying its vision forward.
+            </p>
+
+            <p className="mt-7 max-w-2xl font-body text-base font-medium leading-7 text-ink/65 md:text-lg md:leading-8">
+              OEF's Board of Trustees brings together individuals responsible
+              for different areas of leadership, development, governance,
+              education, community relations, and organisational growth.
+            </p>
+          </div>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }

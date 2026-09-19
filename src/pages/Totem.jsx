@@ -29,7 +29,6 @@ function Totem() {
       number: "06",
       title: "Industry",
       text: "As the saying goes and I quote “Necessity is the mother of innovation”, and without innovation, one cannot be industrious. Industry in the Onicha Igboeze community is a commitment to not only hard work but also the cultivation of creativity and innovation in every endeavor. It encourages the pursuit of new ideas, the exploration of novel approaches, and the development of innovative solutions. Industry is the community’s driving force, pushing them to continually evolve and find creative ways to address challenges and seize opportunities, thus ensuring their progress and prosperity.",
-      note: "Exhibiting creativity and innovativeness in whatever they do.",
     },
     {
       number: "07",
@@ -59,44 +58,40 @@ function Totem() {
   ];
 
   return (
-    <main className="bg-cream text-ink">
+    <main className="overflow-x-hidden bg-primary-light text-ink">
       {/* =========================
           HERO
       ========================== */}
-      <section className="px-5 pb-16 pt-16 sm:px-6 sm:pb-20 sm:pt-20 md:px-8 md:pb-24 md:pt-24 lg:px-10 lg:pb-28 lg:pt-28 xl:px-12 2xl:px-16">
-        <div className="mx-auto grid max-w-[1400px] gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-end lg:gap-20">
+      <section className="px-5 pb-0 pt-28 sm:px-6 sm:pb-20 sm:pt-28 md:px-8 md:pb-24 md:pt-28 lg:px-10 lg:pb-28 lg:pt-28 xl:px-12 2xl:px-16">
+        <div className="mx-auto grid max-w-[1400px] gap-12 lg:border-b border-primary/25 pb-16 sm:pb-20 md:pb-24 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-20 lg:pb-28">
           {/* TEXT */}
-          <div>
+          <div className="pt-0 ">
             <div className="mb-10 flex items-center gap-3">
-              <span className="font-body text-[0.7rem] font-extrabold uppercase tracking-[0.18em] text-forest">
+              <span className="font-body text-[0.7rem] font-extrabold uppercase tracking-[0.18em] text-primary">
                 Our Totem
               </span>
 
-              <span className="h-px w-24 bg-gold"></span>
+              <span className="h-px w-24 bg-primary"></span>
 
-              <span className="h-1.5 w-1.5 rounded-full bg-gold"></span>
+              <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
             </div>
 
-            <h1 className="max-w-[900px] font-display text-[3.5rem] font-normal uppercase leading-[0.86] tracking-[-0.05em] text-ink sm:text-[4.5rem] md:text-[5.5rem] lg:text-[6.3rem] xl:text-[7rem]">
+            <h1 className="max-w-[900px] font-display text-[3.5rem] font-normal uppercase leading-[0.86] tracking-[-0.05em] text-primary-dark sm:text-[4.5rem] md:text-[5.5rem] lg:text-[6.3rem] xl:text-[5rem]">
               Onicha-Igboeze Totem & Core Values.
             </h1>
 
             <div className="mt-8 flex items-center gap-3">
-              <span className="h-px w-10 bg-gold"></span>
+              <span className="h-px w-10 bg-primary"></span>
 
               <p className="font-body text-sm font-bold text-ink/60">
                 By Ogbonnya, Nnayere Simon
               </p>
             </div>
-
-            <p className="mt-2 font-body text-sm font-medium text-ink/45">
-              University of Uyo, Nigeria.
-            </p>
           </div>
 
           {/* TOTEM IMAGE */}
           <div className="relative mx-auto w-full max-w-[600px]">
-            <div className="absolute -inset-3 rounded-[2rem] border border-gold/30"></div>
+            <div className="absolute -inset-3 rounded-[2rem] border border-primary"></div>
 
             <div className="relative overflow-hidden rounded-[1.5rem] bg-paper">
               <img
@@ -120,155 +115,189 @@ function Totem() {
       {/* =========================
           INTRODUCTION
       ========================== */}
-      <section className="bg-paper px-5 py-20 sm:px-6 sm:py-24 md:px-8 md:py-28 lg:px-10 lg:py-32 xl:px-12 2xl:px-16">
+      <section className="bg-paper px-5 py-0 sm:px-6 sm:py-10 md:px-8 md:py-28 lg:px-10 lg:py-0 xl:px-12 2xl:px-16">
         <div className="mx-auto max-w-[1400px]">
-          <div className="grid gap-12 lg:grid-cols-[0.65fr_1fr] lg:gap-24">
+          <div>
             {/* LABEL */}
             <div>
               <div className="flex items-center gap-3">
-                <span className="font-body text-[0.7rem] font-extrabold uppercase tracking-[0.18em] text-forest">
+                <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+
+                <span className="font-body text-[0.7rem] font-extrabold uppercase tracking-[0.18em] text-primary">
                   The Foundation of a Community
                 </span>
-
-                <span className="h-px w-16 bg-gold"></span>
               </div>
             </div>
 
             {/* CONTENT */}
-            <article className="max-w-4xl">
-              <h2 className="font-display text-[3rem] font-normal uppercase leading-[0.9] tracking-[-0.045em] sm:text-[4rem] md:text-[5rem]">
-                What is a community’s core value?
-              </h2>
+            <div className="mx-auto mt-10 text-center lg:mx-40 lg:mt-20">
+              <article className="max-w-6xl ">
+                <h2 className="font-display my-7 text-[3rem] font-normal uppercase leading-[0.9] tracking-[-0.045em] sm:text-[4rem] md:text-[5rem]">
+                  What is a community’s core value?
+                </h2>
 
-              <div className="mt-10 border-l-2 border-gold pl-6 sm:pl-8">
-                <p className="font-display text-2xl leading-[1.15] tracking-[-0.02em] text-ink sm:text-3xl md:text-4xl">
-                  “There is no power for change greater than a community
-                  discovering what it cares about.”
-                </p>
+                <div className="mt-10 sm:pl-8">
+                  <p className="font-display text-2xl leading-[1.15] tracking-[-0.02em] text-ink sm:text-3xl md:text-4xl">
+                    “There is no power for change greater than a community
+                    discovering what it cares about.”
+                  </p>
 
-                <p className="mt-4 font-body text-xs font-extrabold uppercase tracking-[0.12em] text-ink/45">
-                  Margaret J. Wheatley
-                </p>
-              </div>
+                  <p className="mt-4 font-body text-xs font-extrabold uppercase tracking-[0.12em] text-ink/45">
+                    Margaret J. Wheatley
+                  </p>
+                </div>
 
-              <div className="mt-10 space-y-6 font-body text-base font-medium leading-8 text-ink/65 md:text-lg md:leading-9">
-                <p>
-                  Let’s begin our journey with a quote by an American writer,
-                  Margaret J. Wheatley, “There is no power for change greater
-                  than a community discovering what it cares about”, I would
-                  love to add to it “and what it values.”
-                </p>
+                <div className="mt-10 space-y-6 font-body text-body font-medium leading-8 text-ink/65 md:text-lg md:leading-9">
+                  <p>
+                    Let’s begin our journey with a quote by an American writer,
+                    Margaret J. Wheatley, “There is no power for change greater
+                    than a community discovering what it cares about”, I would
+                    love to add to it “and what it values.”
+                  </p>
 
-                <p>
-                  Now, let’s delve into the topic of discussion, A community
-                  core value is a value that is appreciated at an individual
-                  level and shared by every member of the community. Community
-                  values are the non-negotiable core principles or standards
-                  that the community’s residents wish to maintain. They must be
-                  acknowledged, honoured, and constantly defended to ensure that
-                  change and development occur in accordance with these.
-                </p>
+                  <p>
+                    Now, let’s delve into the topic of discussion, A community
+                    core value is a value that is appreciated at an individual
+                    level and shared by every member of the community. Community
+                    values are the non-negotiable core principles or standards
+                    that the community’s residents wish to maintain. They must
+                    be acknowledged, honoured, and constantly defended to ensure
+                    that change and development occur in accordance with these.
+                  </p>
 
-                <p>
-                  In essence, community core values guide the community’s
-                  vision, mission, and strategic plan as well as its goals,
-                  objectives, activities, capital projects, budgets, and
-                  services. They serve as broad guidelines in all situations.
-                  Every community must have the values it appreciates and guide
-                  the individual and collective behaviour of the community.
-                </p>
+                  <p>
+                    In essence, community core values guide the community’s
+                    vision, mission, and strategic plan as well as its goals,
+                    objectives, activities, capital projects, budgets, and
+                    services. They serve as broad guidelines in all situations.
+                    Every community must have the values it appreciates and
+                    guide the individual and collective behaviour of the
+                    community.
+                  </p>
 
-                <p>
-                  Values serve as the moral compass for any society, shaping its
-                  culture, interactions, and collective identity. In the context
-                  of Onicha Igboeze, their totem, the magnificent elephant, is
-                  symbolic of these values, reflecting the community’s
-                  deep-rooted commitment to a set of principles that ensure
-                  unity, fairness, and strength.
-                </p>
+                  <p>
+                    Values serve as the moral compass for any society, shaping
+                    its culture, interactions, and collective identity. In the
+                    context of Onicha Igboeze, their totem, the magnificent
+                    elephant, is symbolic of these values, reflecting the
+                    community’s deep-rooted commitment to a set of principles
+                    that ensure unity, fairness, and strength.
+                  </p>
 
-                <p>
-                  This essay aims to explore the meaning and impact of these
-                  values in the lives of Onicha Igboeze residents.
-                </p>
-              </div>
-            </article>
+                  <p>
+                    This essay aims to explore the meaning and impact of these
+                    values in the lives of Onicha Igboeze residents.
+                  </p>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
       </section>
 
       {/* =========================
-          VALUES INTRO
-      ========================== */}
-      <section className="bg-cream px-5 pb-10 pt-20 sm:px-6 sm:pb-12 sm:pt-24 md:px-8 md:pb-16 md:pt-28 lg:px-10 lg:pb-20 lg:pt-32 xl:px-12 2xl:px-16">
-        <div className="mx-auto max-w-[1400px]">
-          <div className="flex items-end justify-between gap-10">
-            <div>
-              <div className="mb-7 flex items-center gap-3">
-                <span className="font-body text-[0.7rem] font-extrabold uppercase tracking-[0.18em] text-forest">
-                  Our Values
-                </span>
+    VALUES
+========================== */}
+      <section className="relative overflow-hidden bg-primary-light px-5 py-16 sm:px-6 sm:py-20 md:px-8 md:py-24 lg:px-10 lg:py-28 xl:px-12 2xl:px-16">
+        {/* Ambient background blur */}
+        <div className="pointer-events-none absolute -left-24 top-24 h-72 w-72 rounded-full bg-gold/20 blur-3xl"></div>
+        <div className="pointer-events-none absolute -right-24 top-1/2 h-96 w-96 rounded-full bg-forest/20 blur-3xl"></div>
 
-                <span className="h-px w-20 bg-gold"></span>
-              </div>
+        <div className="relative mx-auto max-w-[1400px]">
+          {/* Heading glass panel */}
+          <div className="relative mb-8 overflow-hidden rounded-[2rem] border border-surface/70 bg-paper/60 px-6 py-10 shadow-[0_24px_80px_rgba(16,19,17,0.12)] backdrop-blur-xl sm:px-10 sm:py-14 md:px-14 lg:px-20 lg:py-20">
+            <div className="pointer-events-none absolute inset-0 opacity-40 [background-image:linear-gradient(rgba(67,71,69,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(67,71,69,0.08)_1px,transparent_1px)] [background-size:32px_32px]"></div>
 
-              <h2 className="max-w-4xl font-display text-[3rem] font-normal uppercase leading-[0.88] tracking-[-0.045em] sm:text-[4rem] md:text-[5rem] lg:text-[6rem]">
-                The principles that shape us.
-              </h2>
+            <div className="pointer-events-none absolute -right-8 -top-16 font-display text-[12rem] leading-none text-gold/15 sm:text-[18rem]">
+              11
             </div>
 
-            <span className="hidden font-display text-[8rem] leading-none text-gold/30 lg:block">
-              11
-            </span>
-          </div>
-        </div>
-      </section>
+            <div className="relative flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
+              <div className="max-w-4xl">
+                <div className="mb-7 flex items-center gap-3">
+                  <span className="font-body text-[0.7rem] font-extrabold uppercase tracking-[0.18em] text-gold">
+                    Our Values
+                  </span>
 
-      {/* =========================
-          VALUES
-      ========================== */}
-      <section className="bg-cream px-5 pb-20 sm:px-6 sm:pb-24 md:px-8 md:pb-28 lg:px-10 lg:pb-32 xl:px-12 2xl:px-16">
-        <div className="mx-auto max-w-[1400px]">
-          <div className="border-t border-ink/10">
-            {values.map((value) => (
-              <article
-                key={value.number}
-                className="grid gap-7 border-b border-ink/10 py-10 sm:py-12 lg:grid-cols-[110px_0.65fr_1fr] lg:gap-12 lg:py-14"
-              >
-                {/* NUMBER */}
-                <span className="font-display text-4xl leading-none tracking-[-0.04em] text-gold sm:text-5xl">
-                  {value.number}
+                  <span className="h-px w-20 bg-gold"></span>
+                </div>
+
+                <h2 className="font-display text-[3rem] font-normal uppercase leading-[0.88] tracking-[-0.045em] sm:text-[4rem] md:text-[5rem] lg:text-[6rem]">
+                  The principles that shape us.
+                </h2>
+              </div>
+
+              <div className="flex items-end gap-4 border-t border-ink/15 pt-5 lg:min-w-[180px] lg:flex-col lg:items-start lg:border-l lg:border-t-0 lg:pb-2 lg:pl-6 lg:pt-0">
+                <span className="font-display text-6xl leading-none text-gold sm:text-7xl">
+                  11
                 </span>
 
-                {/* TITLE */}
-                <div>
-                  <h3 className="font-display text-3xl uppercase leading-[0.95] tracking-[-0.035em] sm:text-4xl md:text-5xl">
+                <span className="max-w-[10rem] font-body text-[0.65rem] font-extrabold uppercase tracking-[0.14em] text-ink/55">
+                  values held in common
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* Values card grid */}
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {values.map((value, index) => (
+              <article
+                key={value.number}
+                className={`group relative overflow-hidden rounded-[1.5rem] border border-white/70 bg-paper/55 p-6 shadow-[0_16px_45px_rgba(16,19,17,0.08)] backdrop-blur-lg transition duration-500 hover:-translate-y-2 hover:bg-paper/80 hover:shadow-[0_24px_60px_rgba(16,19,17,0.15)] sm:p-7 ${
+                  index === 0
+                    ? "lg:col-span-1"
+                    : index === 9
+                      ? "lg:col-span-1"
+                      : index === 10
+                        ? "lg:col-span-2"
+                        : ""
+                }`}
+              >
+                {/* Card texture */}
+                <div className="pointer-events-none absolute inset-0 opacity-30 [background-image:linear-gradient(rgba(67,71,69,0.07)_1px,transparent_1px),linear-gradient(90deg,rgba(67,71,69,0.07)_1px,transparent_1px)] [background-size:24px_24px]"></div>
+
+                {/* Decorative glow */}
+                <div className="pointer-events-none absolute -right-12 -top-12 h-32 w-32 rounded-full bg-primary-light blur-2xl transition duration-500 group-hover:bg-gold/35"></div>
+
+                <div className="relative flex h-full flex-col">
+                  <div className="mb-12 flex items-start justify-between">
+                    <span className="font-display text-5xl leading-none tracking-[-0.04em] text-gold">
+                      {value.number}
+                    </span>
+
+                    <span className="rounded-full border border-ink px-3 py-1 font-body text-[0.6rem] font-extrabold uppercase tracking-[0.14em] text-ink">
+                      Core value
+                    </span>
+                  </div>
+
+                  <h3 className="font-display text-3xl uppercase leading-[0.95] tracking-[-0.035em] sm:text-4xl">
                     {value.title}
                   </h3>
 
+                  <div className="mt-6 h-px w-12 bg-gold transition-all duration-500 group-hover:w-24"></div>
+
+                  <p className="mt-6 flex-1 font-body text-sm font-medium leading-7 text-ink/65 sm:text-base sm:leading-8">
+                    {value.text}
+                  </p>
+
                   {value.note && (
-                    <p className="mt-4 max-w-sm font-body text-xs font-extrabold uppercase tracking-[0.1em] text-forest">
+                    <p className="mt-6 border-l-2 border-gold pl-4 font-body text-xs font-extrabold uppercase leading-5 tracking-[0.1em] text-forest">
                       {value.note}
                     </p>
                   )}
                 </div>
-
-                {/* TEXT */}
-                <p className="max-w-2xl font-body text-base font-medium leading-8 text-ink/65 md:text-lg md:leading-9">
-                  {value.text}
-                </p>
               </article>
             ))}
           </div>
         </div>
       </section>
-
       {/* =========================
           ELEPHANT STATEMENT
       ========================== */}
-      <section className="relative overflow-hidden bg-ink px-5 py-24 text-paper sm:px-6 sm:py-28 md:px-8 md:py-32 lg:px-10 lg:py-36 xl:px-12 2xl:px-16">
+      <section className="relative overflow-hidden bg-primary-dark px-5 pb-15 pt-10 text-paper sm:px-6 sm:py-28 md:px-8 md:py-32 lg:px-10 lg:py-36 xl:px-12 2xl:px-16">
         <div className="relative mx-auto max-w-[1400px]">
-          <div className="max-w-3xl">
+          <div className="mx-auto max-w-[1100px]">
             <div className="mb-8 flex items-center gap-3">
               <span className="font-body text-[0.7rem] font-extrabold uppercase tracking-[0.18em] text-gold">
                 A Symbol of Identity
@@ -277,15 +306,17 @@ function Totem() {
               <span className="h-px w-20 bg-gold"></span>
             </div>
 
-            <h2 className="max-w-3xl font-display text-[3rem] font-normal uppercase leading-[0.88] tracking-[-0.045em] sm:text-[4rem] md:text-[5rem]">
-              Strength. Unity. Resilience.
-            </h2>
+            <div className="mx-auto max-w-3xl text-center">
+              <h2 className="font-display text-[3rem] font-normal text-primary-light uppercase leading-[0.88] tracking-[-0.045em] sm:text-[4rem] md:text-[5rem]">
+                Strength. Unity. Resilience.
+              </h2>
 
-            <p className="mt-8 max-w-2xl font-body text-base font-medium leading-8 text-paper/65 md:text-lg md:leading-9">
-              In the context of Onicha Igboeze, the magnificent elephant is
-              symbolic of the community’s values, reflecting a deep-rooted
-              commitment to unity, fairness, and strength.
-            </p>
+              <p className="mx-auto mt-8 max-w-2xl font-body text-base font-medium leading-8 text-primary-light/65 md:text-lg md:leading-9">
+                In the context of Onicha Igboeze, the magnificent elephant is
+                symbolic of the community’s values, reflecting a deep-rooted
+                commitment to unity, fairness, and strength.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -293,15 +324,15 @@ function Totem() {
       {/* =========================
           CONCLUSION
       ========================== */}
-      <section className="bg-paper px-5 py-20 sm:px-6 sm:py-24 md:px-8 md:py-28 lg:px-10 lg:py-32 xl:px-12 2xl:px-16">
+      <section className="bg-primary-light px-5 py-15 sm:px-6 sm:py-24 md:px-8 md:py-28 lg:px-10 lg:py-32 xl:px-12 2xl:px-16">
         <div className="mx-auto max-w-[1200px]">
-          <div className="border-t border-ink/10 pt-10 md:pt-14">
+          <div>
             <div className="mb-8 flex items-center gap-3">
-              <span className="font-body text-[0.7rem] font-extrabold uppercase tracking-[0.18em] text-forest">
+              <span className="font-body text-[0.7rem] font-extrabold uppercase tracking-[0.18em] text-primary">
                 In Conclusion
               </span>
 
-              <span className="h-px w-20 bg-gold"></span>
+              <span className="h-px w-20 bg-primary"></span>
             </div>
 
             <p className="max-w-5xl font-display text-[2.5rem] leading-[0.98] tracking-[-0.035em] text-ink sm:text-[3.5rem] md:text-[4.5rem]">

@@ -31,7 +31,7 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <div className="min-h-screen bg-cream text-ink">
+      <div className="min-h-screen bg-background text-text">
         <Navbar />
 
         <Routes>

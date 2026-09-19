@@ -1,17 +1,36 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
+
   theme: {
     extend: {
       colors: {
-        ink: "#101311",
-        cream: "#F5EFE2",
-        paper: "#FFFDF7",
-        forest: "#123C30",
-        leaf: "#2F8064",
-        gold: "#F4C542",
-        brick: "#D95F45",
-        river: "#2B638A",
+        primary: "#32318E",
+        "primary-dark": "#27266F",
+        "primary-light": "#EEEEFA",
+
+        "muted-gold": "#D9B84C",
+
+        text: "#17172A",
+        surface: "#FFFFFF",
+        "text-secondary": "#53535c",
+
+        forest: "#446552",
+        river: "#448CB2",
+        ink: "#434745",
+        brick: "#E76639",
+        leaf: "#62AF7B",
+        gold: "#EABB06",
+
+        // primary: "#32318E",
+        // "primary-dark": "#27266F",
+        // "primary-light": "#EEEEFA",
+        // support: "#D9A441",
+        // background: "#FAFAF7",
+        // surface: "#FFFFFF",
+        // text: "#17172A",
+        // "text-secondary": "#5F6072",
+        // border: "#E3E3EA",
       },
 
       fontFamily: {

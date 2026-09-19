@@ -4,7 +4,7 @@ function Archive() {
       {/* =========================
           ARCHIVE HERO
       ========================== */}
-      <section className="bg-cream px-5 pb-16 pt-16 sm:px-6 sm:pb-20 sm:pt-20 md:px-8 md:pb-24 md:pt-24 lg:px-10 lg:pb-28 lg:pt-28 xl:px-12 2xl:px-16">
+      <section className="bg-cream px-5 pb-16 pt-28 sm:px-6 sm:pb-20 sm:pt-28 md:px-8 md:pb-24 md:pt-28 lg:px-10 lg:pb-28 lg:pt-28 xl:px-12 2xl:px-16">
         <div className="mx-auto max-w-[1400px]">
           <div className="grid gap-10 lg:grid-cols-[1fr_0.7fr] lg:items-end lg:gap-16">
             <div>
