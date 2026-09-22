@@ -295,7 +295,7 @@ function Totem() {
       {/* =========================
           ELEPHANT STATEMENT
       ========================== */}
-      <section className="relative overflow-hidden bg-primary-dark px-5 pb-15 pt-10 text-paper sm:px-6 sm:py-28 md:px-8 md:py-32 lg:px-10 lg:py-36 xl:px-12 2xl:px-16">
+      <section className="relative overflow-hidden bg-primary-dark px-5 pb-15 pt-10 text-paper sm:px-6 sm:py-28 md:px-8 md:py-32 lg:px-10 lg:pb-10 lg:pt-18 xl:px-12 2xl:px-16">
         <div className="relative mx-auto max-w-[1400px]">
           <div className="mx-auto max-w-[1100px]">
             <div className="mb-8 flex items-center gap-3">
@@ -324,7 +324,7 @@ function Totem() {
       {/* =========================
           CONCLUSION
       ========================== */}
-      <section className="bg-primary-light px-5 py-15 sm:px-6 sm:py-24 md:px-8 md:py-28 lg:px-10 lg:py-32 xl:px-12 2xl:px-16">
+      <section className="bg-primary-light px-5 py-15 sm:px-6 sm:py-24 md:px-8 md:py-28 lg:px-10 lg:py-15 xl:px-12 2xl:px-16">
         <div className="mx-auto max-w-[1200px]">
           <div>
             <div className="mb-8 flex items-center gap-3">
