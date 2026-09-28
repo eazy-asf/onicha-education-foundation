@@ -209,7 +209,7 @@ function Home() {
         <div className="mx-auto max-w-[1400px]">
           <div className="grid gap-10 lg:grid-cols-[1fr_0.55fr] lg:items-center">
             <div>
-              <p className="text-[0.65rem] pb-7 font-black uppercase tracking-[0.18em] text-muted-gold">
+              <p className="text-[0.65rem] pb-7 font-black uppercase tracking-[0.18em] text-gold">
                 The work
               </p>
 
@@ -239,7 +239,7 @@ function Home() {
                   {program}
                 </span>
 
-                <span className="text-[0.62rem] font-black uppercase tracking-[0.15em] text-primary-light transition-colors duration-300 group-hover:text-muted-gold">
+                <span className="text-[0.62rem] font-black uppercase tracking-[0.15em] text-primary-light transition-colors duration-300 group-hover:text-gold">
                   Explore →
                 </span>
               </Link>
@@ -249,7 +249,7 @@ function Home() {
           <div className="mt-10">
             <Link
               to="/programs"
-              className="inline-flex items-center gap-3 rounded-sm border border-primary-light px-6 py-4 text-xs font-black uppercase trcking-[0.14em] text-support transition-all duration-300 hover:bg-support hover:text-muted-gold"
+              className="inline-flex items-center gap-3 rounded-sm border border-primary-light px-6 py-4 text-xs font-black uppercase trcking-[0.14em] text-support transition-all duration-300 hover:bg-support hover:text-gold"
             >
               Explore all programs
               <span>↗</span>

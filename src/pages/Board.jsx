@@ -82,7 +82,7 @@ const boardMembers = [
   {
     name: "Engr. Chigozie Uneke",
     role: "Lead, Diversity and Inclusion",
-    image: "",
+    image: "/magazine-pages/Engr-Chigozie-Uneke.jpeg",
     functions: [
       "Ensure balance and inclusion in all OEF public events",
       "Advise on peculiar cases of individuals in need for the consideration of OEF BOT",
