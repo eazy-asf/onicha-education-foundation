@@ -138,7 +138,7 @@ const boardMembers = [
   {
     name: "Ms. Chidinma Nwankwo",
     role: "Lead, Advocacy and Impacts",
-    image: "",
+    image: "/magazine-pages/Ms-Chidinma-Nwankwo.jpg",
     functions: [
       "Use available data to evaluate impacts of OEF programs",
       "Collate reports of all units and prepare annual OEF report",
